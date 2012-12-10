@@ -1,0 +1,6 @@
+<% if (model.get('author')) { %>
+<p class="info"><span><%=model.get('ups') - model.get('downs')%></span><%=model.get('author')%></p>
+<%=_.unescape(model.get('body_html'))%>
+<% } else { %>
+<a href="#" class="more-comments"><%=model.get('count')%> more comments</a>
+<% } %>

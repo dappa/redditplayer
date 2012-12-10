@@ -1,0 +1,4 @@
+<p class="title"><a href="<%=model.url%>" class="oembed"><%=model.title%></a></p>
+<% if (model.selftext_html !== null) { %>
+<p class="self-post"><%=_.unescape(model.selftext_html)%></p>
+<% } %>

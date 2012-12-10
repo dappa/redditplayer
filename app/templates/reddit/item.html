@@ -1,0 +1,19 @@
+<div class="wrap">
+	<div class="wrapper-votes">
+		<span class="score"><%=model.get('score')%></span>
+	</div>
+	<div class="wrapper-comments">
+		<span><%=model.get('num_comments')%></span>
+	</div>
+</div>
+
+<% if (model.get('thumbnail')) {  %>
+	<a href="<%=model.get('url')%>"><img src="<%=model.get('thumbnail')%>"></a>
+<% } %>
+<% if (!model.get('thumbnail') && model.get('domain') == 'imgur.com') {  %>
+	<a href="<%=model.get('url')%>"><img src="/app/img/image.png"></a>
+<% } %>
+<p class="title"><a href="<%=model.get('url')%>"><%-model.get('title')%></a></p>
+<div class="comments">
+	<div class="flap"></div>
+</div>
