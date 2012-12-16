@@ -516,7 +516,7 @@ ul.stories li .flap:hover {
 span.toggle-image {
 	width: 26px;
 	height: 20px;
-	background: url('../img/camera-off.png') no-repeat center;
+	background: url('/app/img/camera-off.png') no-repeat center;
 	cursor: pointer;
 	display: inline-block;
 	margin-left: 5px;
@@ -531,7 +531,7 @@ span.toggle-image:hover {
 
 span.toggle-image.show {
 	border-color: #000;
-	background: url('../img/camera-on.png') no-repeat center;
+	background: url('/app/img/camera-on.png') no-repeat center;
 }
 
 .inline-media {
