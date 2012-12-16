@@ -434,11 +434,11 @@ ul.stories li .flap:hover {
 }
 
 .flap-comment {
-	border: 2px dashed #ccc;
+	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 5px;
 	margin-bottom: 20px;
-	font-size: 13px;
+	font-size: 14px;
 }
 .flap-comment p {
 	margin: 0 0 5px 0;
@@ -457,7 +457,7 @@ ul.stories li .flap:hover {
 }
 
 .flap-comment .odd, .flap-comment .even {
-	margin-left: 5px;
+	margin-left: 10px;
 	border: 1px solid #ccc;
 	margin-bottom: 5px;
 	margin-top: 10px;
@@ -476,6 +476,10 @@ ul.stories li .flap:hover {
 	color: #999;
 	text-decoration: none;
 
+}
+
+.flap-comment .md a {
+	text-decoration: none;
 }
 
 .flap-comment blockquote{padding:0 0 0 15px;margin:0 0 5px;border-left:5px solid #eeeeee;}
@@ -516,13 +520,18 @@ ul.stories li .flap:hover {
 span.toggle-image {
 	width: 26px;
 	height: 20px;
-	background: url('/app/img/camera-off.png') no-repeat center;
+	background: url('../img/camera-off.png') no-repeat center;
 	cursor: pointer;
 	display: inline-block;
 	margin-left: 5px;
 	border: 1px solid #ccc;
 	padding: 3px;
 	border-radius: 2px;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    -o-user-select: none;
+    user-select: none;      
 }
 
 span.toggle-image:hover {
@@ -531,7 +540,7 @@ span.toggle-image:hover {
 
 span.toggle-image.show {
 	border-color: #000;
-	background: url('/app/img/camera-on.png') no-repeat center;
+	background: url('../img/camera-on.png') no-repeat center;
 }
 
 .inline-media {
