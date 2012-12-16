@@ -512,3 +512,97 @@ ul.stories li .flap:hover {
 	max-width: 500px;
 	height: auto;
 }
+
+span.toggle-image {
+	width: 26px;
+	height: 20px;
+	background: url('../img/camera-off.png') no-repeat center;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 5px;
+	border: 1px solid #ccc;
+	padding: 3px;
+	border-radius: 2px;
+}
+
+span.toggle-image:hover {
+	background-color: #f9f9f9;
+}
+
+span.toggle-image.show {
+	border-color: #000;
+	background: url('../img/camera-on.png') no-repeat center;
+}
+
+.inline-media {
+	padding: 5px;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+	border-radius: 3px;
+}
+
+.inline-media img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media only screen and (max-width: 680px) {
+
+	.reddit {
+		width: 100%;
+		float:none;
+		position: static;
+	}
+
+	ul.stories li p.title {
+		width: 64%; /* 384 (originally 390) / 600 */
+		margin-left: 0.769230769%; 
+	}
+
+	ul.stories li p.title a {
+		overflow:hidden;
+	}
+
+	ul.stories li .flap, ul.stories li .flap:hover {
+		width:10%;
+	}
+
+	.flap-column {
+		position: static;
+		width: 100%;
+
+	}
+
+	ul.stories li .wrap {
+		min-width: 10%;
+	}
+
+	ul.stories li .wrapper-votes, ul.stories li .wrapper-comments {
+		width: auto;
+	}
+
+	ul.stories li .wrap span {
+		font-size: 87.5%;
+	}
+
+	.flap-wrapper {
+		position: absolute;
+		top:0;
+		right:0;
+		width: 100%;
+	}
+
+	.flap-wrapper .flap-view {
+		margin:0;
+		background-color: #fff;
+		position:static;
+	}
+
+	.flap-story img {
+		width: 100%;
+		height: auto;
+	}
+
+
+
+}
