@@ -285,18 +285,29 @@ ul.stories li img {
 	padding: 0 5px;
 }
 
-ul.stories li p.title {
+ul.stories li .story-info {
 	float:left;
-	display:inline;
-	margin:0;
-	width: 390px;
+	width: 420px;
 	margin-left: 3px;
+}
+
+ul.stories li .story-info p {
+	margin:0;
+}
+
+ul.stories li .story-info .subreddit {
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #666;
+	margin-bottom: 3px;
+	text-transform: uppercase;
+}
+
+ul.stories li p.title {
 	line-height: 22px;
 }
 
-ul.stories li p.title:first-line {
-	line-height: 16px;
-}
 
 ul.stories li p.title a {
 	color: blue;
@@ -389,10 +400,16 @@ ul.stories li .flap:hover {
 	-webkit-box-shadow: inset 3px 0px 3px 0px rgba(0, 0, 0, 0.1), inset 0px 5px 40px 0px rgba(217, 240 , 255, 0.6);
     box-shadow: inset 3px 0px 3px 0px rgba(0, 0, 0, 0.1), inset 0px 5px 40px 0px rgba(217, 240 , 255, 0.6);
 
-    -webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+ul.stories li.selected .flap:hover {
+	border-color: #75000b;
+	-webkit-box-shadow: inset 3px 0px 3px 0px rgba(0, 0, 0, 0.1), inset 0px 5px 40px 0px rgba(0, 0 , 0, 0.6);
+    box-shadow: inset 3px 0px 3px 0px rgba(0, 0, 0, 0.1), inset 0px 5px 40px 0px rgba(0, 0 , 0, 0.6);
 }
 
 .flap-view hr {
